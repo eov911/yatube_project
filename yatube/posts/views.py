@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse('Главная страница')
 
-def group_posts(request):
-    return HttpResponse('Здесь будут посты, отфильтрованные по группам')
+def group_posts(request, slug):
+    return HttpResponse(f'Страница с информацией о группе {slug}')
